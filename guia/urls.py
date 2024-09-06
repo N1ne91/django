@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from appMauri import views
+from appvistor2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('appnacho/', include("appnacho.urls")),
     path('appMauri/', include("appMauri.urls")),
+    path('appvistor2/', include('appvistor2.urls')),
 ]
