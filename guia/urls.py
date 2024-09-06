@@ -20,5 +20,6 @@ from appMauri import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('appnacho/', include("appnacho.urls")),
     path('appMauri/', include("appMauri.urls")),
 ]
